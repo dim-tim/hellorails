@@ -1,15 +1,23 @@
 Blog::Application.routes.draw do
-  get "welcome/index"
-
+  resources :posts
+  #get "welcome/index"
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'welcome#index'
-
-  get "posts/new"
-
-  post "posts/create"
-
-  get "posts/:id" => "posts#show"
+  #root :to => 'welcome#index'
+  #
+  #get "posts/new"
+  #
+  #post "posts/create"
+  #
+  #get "posts/:id" => "posts#show", :as => :post
+  #
+  #get "posts" => "posts#index"
+  #
+  #get "posts/:id/edit" => "posts#edit"
+  #
+  #put "posts/:id" => "posts#update"
+  #
+  #delete "posts/:id" => "posts#destroy"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
