@@ -1,5 +1,7 @@
 Blog::Application.routes.draw do
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
   #get "welcome/index"
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
